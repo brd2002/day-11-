@@ -6,13 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/getName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="User name "
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/getPhonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getName" />
+
+    <Button
+        android:id="@+id/goToNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Next Activity"
+        app:layout_constraintEnd_toEndOf="@+id/getPhonenumber"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/getPhonenumber"
+        app:layout_constraintTop_toBottomOf="@+id/getPhonenumber" />
+
+    <Button
+        android:id="@+id/CallButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="calling Button"
+        app:layout_constraintEnd_toEndOf="@+id/goToNext"
+        app:layout_constraintStart_toStartOf="@+id/goToNext"
+        app:layout_constraintTop_toBottomOf="@+id/goToNext" />
+
+    <Button
+        android:id="@+id/GoToWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="GoToWeb"
+        app:layout_constraintEnd_toEndOf="@+id/CallButton"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/CallButton"
+        app:layout_constraintTop_toBottomOf="@+id/CallButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
